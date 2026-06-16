@@ -19,7 +19,7 @@ public class ItemsController : ControllerBase
         return Ok(item); // 200
     }
     
-    [HttpPost("/api/workshop/{wId}/register")]
+    [HttpPost("/api/workshops/{wId}/register")]
     public async Task<IActionResult> CreateItem(int wId, [FromBody] CreateItemDto dto)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);

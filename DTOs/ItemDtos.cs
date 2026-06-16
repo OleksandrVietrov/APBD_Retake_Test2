@@ -39,18 +39,6 @@ public class RegistrationDto
     public DateTime RegisteredAt { get; set; }
     public int HasProjector { get; set; }
 }
-
-
-
-
-
-
-
-
-
-
-
-// ============ INPUT DTOs (shape of POST.json / PUT.json) -- WITH validation ============
 public class CreateItemDto
 {
     [Required][MaxLength(50)]
